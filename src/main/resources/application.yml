@@ -1,0 +1,25 @@
+server:
+  port: 8777
+
+dbhost: localhost
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${dbhost}:5432/auth_users
+    driver-class-name: org.postgresql.Driver
+    username: dbadmin
+    password: Zaq123@!
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+client:
+  id: ABC123
+  secret: "{bcrypt}$2a$10$GGx4HnBj0GHBN9V8uMKxu.0pNhkAxrnDt.6Efz7E7tnzUBPHeahCS"
