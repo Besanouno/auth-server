@@ -1,12 +1,12 @@
-package pl.demo.users;
+package pl.demo.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pl.demo.converters.GenderConverter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.ZonedDateTime;
 
 @Entity
 @Table(name = "users")
@@ -31,4 +31,8 @@ public class User {
 
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
+
+    @Column(name = "deletion_date")
+    private ZonedDateTime deletionDate;
+
 }

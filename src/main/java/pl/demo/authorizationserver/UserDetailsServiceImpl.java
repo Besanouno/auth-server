@@ -6,8 +6,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.oauth2.common.exceptions.InvalidGrantException;
 import org.springframework.stereotype.Service;
-import pl.demo.users.User;
-import pl.demo.users.UserRepository;
+import pl.demo.entity.User;
+import pl.demo.repository.UserRepository;
 
 import java.util.Collections;
 
